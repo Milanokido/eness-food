@@ -1,0 +1,119 @@
+/* Eness Food - Styles personnalises */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Prevent horizontal overflow on body */
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+/* Remove default text centering */
+.App {
+    text-align: left;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* Hide scrollbar but allow scrolling */
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Mobile menu modal fixes */
+@media (max-width: 768px) {
+    /* Fix dialog positioning on mobile */
+    [data-radix-dialog-content] {
+        width: 95vw !important;
+        max-width: 95vw !important;
+        left: 50% !important;
+        transform: translateX(-50%) translateY(-50%) !important;
+    }
+    
+    /* Ensure cards don't overflow */
+    .grid {
+        max-width: 100%;
+    }
+    
+    /* Make card content responsive */
+    [class*="CardContent"] > div {
+        max-width: 100%;
+    }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Hover effects for interactive elements */
+button,
+a[href] {
+    cursor: pointer;
+}
+
+/* Ensure focus states are visible */
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid #F5A623;
+    outline-offset: 2px;
+}
+
+/* Custom selection color */
+::selection {
+    background-color: #F5A623;
+    color: #000000;
+}
+
+::-moz-selection {
+    background-color: #F5A623;
+    color: #000000;
+}
+
+/* Loading state for images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure proper z-index layering */
+.relative {
+    position: relative;
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
