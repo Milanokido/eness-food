@@ -81,3 +81,9 @@ code {
         @apply bg-background text-foreground;
     }
 }
+
+/* Fond sombre global : evite le flash blanc au chargement et l'overscroll blanc sur mobile */
+html,
+body {
+    background-color: #1a1a1a;
+}
