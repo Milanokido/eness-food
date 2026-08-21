@@ -8,15 +8,19 @@ Sandwichs & brochettes grillés à la flamme, burgers, chicken & buckets, salade
 
 - React 19 + Create React App (CRACO)
 - Tailwind CSS + shadcn/ui
+- Gestionnaire de paquets : **npm**
 - Déploiement : Netlify (build du dossier `frontend`)
 
 ## Lancer en local
 
 ```bash
 cd frontend
-yarn install
-yarn start
+npm install
+npm start
 ```
+
+Sous PowerShell, si `npm` est bloque par la politique d'execution de scripts,
+utiliser `npm.cmd install` et `npm.cmd start`.
 
 Le site est disponible sur http://localhost:3000
 
@@ -24,7 +28,7 @@ Le site est disponible sur http://localhost:3000
 
 ```bash
 cd frontend
-yarn build
+npm run build
 ```
 
 ## Modifier le contenu du site
@@ -84,6 +88,6 @@ tuile sombre avec l'icône de la catégorie et la mention « Photo à venir ».
 La configuration est dans `netlify.toml` :
 
 - base : `frontend`
-- commande : `yarn build`
+- commande : `npm run build`
 - dossier publié : `build`
 - redirection SPA : `/*` → `/index.html` (200)
