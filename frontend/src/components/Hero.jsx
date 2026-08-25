@@ -28,7 +28,7 @@ export const Hero = () => {
       }}
     >
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/70"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/40 to-black/85"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-32">
