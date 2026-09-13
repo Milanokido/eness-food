@@ -37,7 +37,7 @@ export const Hero = () => {
           <img
             src={restaurantInfo.logo}
             alt={`${restaurantInfo.name} Logo`}
-            className="w-3/5 h-auto"
+            className="w-[42%] h-auto"
           />
         </div>
 
