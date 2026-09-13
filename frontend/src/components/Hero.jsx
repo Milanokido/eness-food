@@ -43,10 +43,17 @@ export const Hero = () => {
 
         {/* Main Title */}
         <h1
-          className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 break-words"
+          className="font-bold text-white mb-6 break-words"
           style={{ fontFamily: "'Crimson Text', 'Times New Roman', serif" }}
         >
-          {restaurantInfo.name}{restaurantInfo.location ? ` – ${restaurantInfo.location}` : ""}
+          <span className="block text-4xl sm:text-5xl md:text-7xl">
+            {restaurantInfo.name}
+          </span>
+          {restaurantInfo.location && (
+            <span className="block text-2xl sm:text-3xl md:text-5xl mt-2">
+              {restaurantInfo.location}
+            </span>
+          )}
         </h1>
 
         {/* Tagline */}
