@@ -15,7 +15,7 @@ export const GallerySection = () => {
             Notre Galerie
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            Decouvrez nos delicieuses creations culinaires
+            Découvrez nos créations, catégorie par catégorie
           </p>
         </div>
 

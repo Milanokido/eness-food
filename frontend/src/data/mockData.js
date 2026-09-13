@@ -77,9 +77,53 @@ export const aboutText = {
   ]
 };
 
-// Galerie : deposer les photos dans frontend/public/gallery/ puis referencer ici
-// Exemple : { id: 1, url: "/gallery/photo1.jpg", alt: "Sandwich Blidar", category: "Blidar" }
-export const galleryImages = [];
+// Galerie : photos affichees dans la section "Notre Galerie".
+// Pour ajouter une photo : la deposer dans frontend/public/gallery/
+// puis ajouter une ligne ci-dessous avec un id unique.
+export const galleryImages = [
+  {
+    id: 1,
+    url: "/menu/blidar.jpg",
+    alt: "Sandwich Blidar aux brochettes de poulet grillees",
+    category: "Sandwich Blidar"
+  },
+  {
+    id: 2,
+    url: "/menu/burgers-classiques.jpg",
+    alt: "Burger classique double steak cheddar",
+    category: "Burgers Classiques"
+  },
+  {
+    id: 3,
+    url: "/menu/burgers-gourmets.jpg",
+    alt: "Burger gourmet double steak boucher",
+    category: "Burgers Gourmets"
+  },
+  {
+    id: 4,
+    url: "/menu/chicken.jpg",
+    alt: "Bucket de tenders et wings",
+    category: "Chicken & Buckets"
+  },
+  {
+    id: 5,
+    url: "/menu/salades.jpg",
+    alt: "Salade fraiche tomates, poivrons et radis",
+    category: "Nos Salades"
+  },
+  {
+    id: 6,
+    url: "/menu/snacks.jpg",
+    alt: "Hummer, pains de mie toastes, steaks et cheddar",
+    category: "Snacks"
+  },
+  {
+    id: 7,
+    url: "/menu/desserts.jpg",
+    alt: "Tiramisu et boissons fraiches",
+    category: "Desserts & Boissons"
+  }
+];
 
 // ============================================================
 // MENU
