@@ -34,22 +34,21 @@ export const restaurantInfo = {
   // Moyens de paiement acceptes : la carte est masquee tant que la liste est vide.
   // Exemple : ["Espèces", "CB", "Tickets resto"]
   payments: [],
-  badges: ["Grillé à la flamme", "Livraison gratuite", "Ouvert 7j/7"],
+  badges: ["Grillé à la flamme", "Livraison gratuite", "Ouvert 6j/7"],
 
   openingHours: {
-    lundi: "17h30 – 01h00",
-    mardi: "17h30 – 01h00",
-    mercredi: "17h30 – 01h00",
-    jeudi: "17h30 – 01h00",
+    lundi: "Fermé",
+    mardi: "17h30 – 02h00",
+    mercredi: "17h30 – 02h00",
+    jeudi: "17h30 – 02h00",
     vendredi: "17h30 – 02h00",
     samedi: "17h30 – 02h00",
-    dimanche: "17h30 – 01h00"
+    dimanche: "17h30 – 02h00"
   },
 
   hoursSummary: [
-    "Lun–Jeu : 17h30 – 01h00",
-    "Ven–Sam : 17h30 – 02h00",
-    "Dim : 17h30 – 01h00"
+    "Lundi : fermé",
+    "Mardi–Dimanche : 17h30 – 02h00"
   ]
 };
 
@@ -69,9 +68,9 @@ export const aboutText = {
       icon: "delivery"
     },
     {
-      title: "Ouvert 7j/7",
+      title: "Ouvert 6j/7",
       description:
-        "Ouverts tous les soirs à partir de 17h30, jusqu'à 1h en semaine et 2h le vendredi et le samedi.",
+        "Ouverts du mardi au dimanche, tous les soirs de 17h30 à 2h du matin. Fermé le lundi.",
       icon: "clock"
     }
   ]
@@ -347,7 +346,7 @@ export const menuCategories = [
       {
         subtitle: "À la carte",
         items: [
-          { name: "Hummer", description: "4 pains de mie toastés, 3 steaks, 3 cheddars, mayo / ketchup, salade, tomate.", price: "6,50 €" },
+          { name: "Hummer - Menu", description: "4 pains de mie toastés, 3 steaks, 3 cheddars, mayo / ketchup, salade, tomate.", price: "9,90 €" },
           { name: "Bouchées – 6 pièces", description: "Au choix : jalapeños, sticks mozzarella, bouchées de camembert ou beignets de calamars.", price: "6,50 €" },
           { name: "Frites paysannes", description: "Barquette de frites paysannes.", price: "3,50 €" }
         ]
