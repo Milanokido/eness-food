@@ -147,22 +147,26 @@ export const menuCategories = [
           {
             name: "Brochettes de poulet",
             description: "3 brochettes de poulet + frites maison + boisson",
+            dineIn: "7,00 €",
             price: "9,00 €",
             featured: true
           },
           {
             name: "Brochettes de bœuf",
             description: "3 brochettes de bœuf + frites maison + boisson",
+            dineIn: "7,00 €",
             price: "9,00 €"
           },
           {
             name: "Brochettes de merguez",
             description: "3 brochettes de merguez + frites maison + boisson",
+            dineIn: "7,00 €",
             price: "9,00 €"
           },
           {
             name: "Brochettes de foie",
             description: "3 brochettes de foie + frites maison + boisson",
+            dineIn: "7,00 €",
             price: "9,00 €"
           }
         ]
