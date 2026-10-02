@@ -6,6 +6,32 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { menuCategories } from '../data/mockData';
 import { getMenuIcon } from '../lib/menuIcons';
 
+const PriceBlock = ({ item }) => {
+  if (!item.dineIn) {
+    return (
+      <span className="font-bold text-black whitespace-nowrap text-sm md:text-base">
+        {item.price}
+      </span>
+    );
+  }
+  return (
+    <div className="flex flex-col items-end gap-1.5 whitespace-nowrap">
+      <div className="text-right leading-tight">
+        <span className="block text-[10px] font-semibold uppercase tracking-wider text-black/55">
+          Sur place
+        </span>
+        <span className="block font-bold text-black text-sm md:text-base">{item.dineIn}</span>
+      </div>
+      <div className="text-right leading-tight">
+        <span className="block text-[10px] font-semibold uppercase tracking-wider text-black/55">
+          Livraison
+        </span>
+        <span className="block font-bold text-black text-sm md:text-base">{item.price}</span>
+      </div>
+    </div>
+  );
+};
+
 const ItemRow = ({ item }) => (
   <div className="flex justify-between items-start p-3 md:p-4 bg-white/50 rounded-lg hover:bg-white/70 transition-all duration-200">
     <div className="flex-1 min-w-0 pr-2">
@@ -17,14 +43,14 @@ const ItemRow = ({ item }) => (
         <p className="text-xs md:text-sm text-gray-700 mt-1">{item.description}</p>
       )}
     </div>
-    <span className="font-bold text-black whitespace-nowrap text-sm md:text-base">{item.price}</span>
+    <PriceBlock item={item} />
   </div>
 );
 
 const GridRow = ({ item }) => (
   <div className="flex justify-between items-center gap-3 p-3 bg-white/50 rounded-lg hover:bg-white/70 transition-all duration-200">
     <span className="font-semibold text-black text-sm md:text-base">{item.name}</span>
-    <span className="font-bold text-black whitespace-nowrap text-sm md:text-base">{item.price}</span>
+    <PriceBlock item={item} />
   </div>
 );
 
@@ -76,6 +102,13 @@ export const MenuModal = ({ isOpen, onClose, initialCategory }) => {
               </DialogTitle>
               {active.tagline && (
                 <p className="text-sm text-gray-400 mt-1 text-left">{active.tagline}</p>
+              )}
+              {active.sections.some((s) => s.items.some((i) => i.dineIn)) && (
+                <p className="text-xs text-gray-400 mt-2 text-left">
+                  Deux tarifs selon la formule :{' '}
+                  <span className="font-semibold text-[#F5A623]">sur place</span> ou{' '}
+                  <span className="font-semibold text-[#F5A623]">en livraison</span>.
+                </p>
               )}
             </div>
             <button

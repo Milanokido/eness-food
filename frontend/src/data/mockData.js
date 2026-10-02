@@ -179,20 +179,20 @@ export const menuCategories = [
       {
         subtitle: "Nos burgers classiques",
         items: [
-          { name: "Cheese", description: "Steak, fromage, ketchup, moutarde, oignons, pickles.", price: "7,50 €" },
-          { name: "Double Cheese", description: "2 steaks, 2 fromages, ketchup, moutarde, oignons, pickles.", price: "8,50 €" },
-          { name: "Triple Cheese", description: "3 steaks, 3 fromages, ketchup, moutarde, oignons, pickles.", price: "9,50 €" },
-          { name: "Le Big", description: "3 steaks 90 g, jambon, 2 cheddars, œuf, salade, oignons, sauce samouraï, ketchup.", price: "9,90 €" },
+          { name: "Cheese", description: "Steak, fromage, ketchup, moutarde, oignons, pickles.", dineIn: "6,00 €", price: "7,50 €" },
+          { name: "Double Cheese", description: "2 steaks, 2 fromages, ketchup, moutarde, oignons, pickles.", dineIn: "7,00 €", price: "8,50 €" },
+          { name: "Triple Cheese", description: "3 steaks, 3 fromages, ketchup, moutarde, oignons, pickles.", dineIn: "8,00 €", price: "9,50 €" },
+          { name: "Le Big", description: "3 steaks 90 g, jambon, 2 cheddars, œuf, salade, oignons, sauce samouraï, ketchup.", dineIn: "9,00 €", price: "9,90 €" },
           { name: "Le Max", description: "Steak 90 g, galette chicken, cheddar, emmental, salade, oignons, sauce poivre, barbecue.", price: "9,90 €" },
-          { name: "Whooper Simple", description: "Steak, cheddar, mayonnaise, ketchup, salade, tomates, oignons rouges, pickles.", price: "7,90 €" },
-          { name: "Whooper Double", description: "2 steaks, 2 cheddars, mayonnaise, ketchup, salade, tomates, oignons rouges, pickles.", price: "8,90 €" },
-          { name: "Whooper Triple", description: "3 steaks, 3 cheddars, mayonnaise, ketchup, salade, tomates, oignons rouges, pickles.", price: "9,90 €" },
-          { name: "Le 90", description: "Steak 90 g, cheddar, chorizo de bœuf, salade, tomates, oignons rouges, sauce algérienne / barbecue.", price: "9,50 €" },
-          { name: "Le 180", description: "2 steaks 90 g, 2 cheddars, tomates, oignons rouges, sauce algérienne / barbecue.", price: "9,90 €" },
-          { name: "American", description: "3 steaks 90 g, cheddar, galette pomme de terre, mayonnaise, barbecue, salade.", price: "9,90 €" },
+          { name: "Whooper Simple", description: "Steak, cheddar, mayonnaise, ketchup, salade, tomates, oignons rouges, pickles.", dineIn: "6,50 €", price: "7,90 €" },
+          { name: "Whooper Double", description: "2 steaks, 2 cheddars, mayonnaise, ketchup, salade, tomates, oignons rouges, pickles.", dineIn: "7,50 €", price: "8,90 €" },
+          { name: "Whooper Triple", description: "3 steaks, 3 cheddars, mayonnaise, ketchup, salade, tomates, oignons rouges, pickles.", dineIn: "8,50 €", price: "9,90 €" },
+          { name: "Le 90", description: "Steak 90 g, cheddar, chorizo de bœuf, salade, tomates, oignons rouges, sauce algérienne / barbecue.", dineIn: "7,50 €", price: "9,50 €" },
+          { name: "Le 180", description: "2 steaks 90 g, 2 cheddars, tomates, oignons rouges, sauce algérienne / barbecue.", dineIn: "8,50 €", price: "9,90 €" },
+          { name: "American", description: "3 steaks 90 g, cheddar, galette pomme de terre, mayonnaise, barbecue, salade.", dineIn: "8,50 €", price: "9,90 €" },
           { name: "Crispy Burger", description: "Tenders, cheddar, salade, tomates, oignons rouges, mayonnaise, barbecue.", price: "8,50 €" },
-          { name: "Chicken Burger", description: "Galette chicken, cheddar, salade, oignons rouges, mayonnaise.", price: "8,50 €" },
-          { name: "Tower", description: "Galette chicken, galette pomme de terre, double cheddar, salade, oignons rouges, mayonnaise.", price: "9,90 €" },
+          { name: "Chicken Burger", description: "Galette chicken, cheddar, salade, oignons rouges, mayonnaise.", dineIn: "7,00 €", price: "8,50 €" },
+          { name: "Tower", description: "Galette chicken, galette pomme de terre, double cheddar, salade, oignons rouges, mayonnaise.", dineIn: "8,50 €", price: "9,90 €" },
           { name: "Spécial", description: "Steak 90 g, cheddar, salade, poivrons grillés, œuf, sauce algérienne.", price: "10,50 €" }
         ]
       },
@@ -200,7 +200,7 @@ export const menuCategories = [
         subtitle: "Options",
         layout: "grid",
         items: [
-          { name: "Sauce cheddar + bacon de bœuf fait maison", price: "+2,50 €" },
+          { name: "Sauce cheddar + bacon de bœuf fait maison", dineIn: "+2,50 €", price: "+2,50 €" },
           { name: "Oignons crispy", price: "+0,80 €" }
         ]
       }
@@ -218,12 +218,12 @@ export const menuCategories = [
         subtitle: "Nos burgers gourmets",
         note: "Tous servis avec frites paysannes + boisson 33 cl, dans un pain artisanal",
         items: [
-          { name: "New Yorkais", description: "Steak boucher 150 g, red cheddar, sauce BBQ, chorizo de bœuf frais, salade, oignons frits.", price: "12,90 €", featured: true },
-          { name: "La Raclette", description: "Steak boucher 150 g, raclette, sauce au poivre, galette de pomme de terre, salade, oignons frits.", price: "12,90 €" },
-          { name: "Chèvre Miel", description: "Steak boucher 150 g, fromage de chèvre, red cheddar, miel, moutarde, salade.", price: "12,90 €" },
-          { name: "Braisé", description: "Suprême de poulet braisé, red cheddar, sauce poivre, bacon de bœuf, salade, oignons rouges.", price: "12,90 €" },
-          { name: "L'Emmental", description: "Steak boucher 150 g, double emmental, salade, oignons frits, chorizo de bœuf, mayo / barbecue.", price: "12,90 €" },
-          { name: "Le French", description: "Steak boucher 150 g, jambon, emmental, cheddar, sauce blanche.", price: "12,90 €" },
+          { name: "New Yorkais", description: "Steak boucher 150 g, red cheddar, sauce BBQ, chorizo de bœuf frais, salade, oignons frits.", dineIn: "10,90 €", price: "12,90 €", featured: true },
+          { name: "La Raclette", description: "Steak boucher 150 g, raclette, sauce au poivre, galette de pomme de terre, salade, oignons frits.", dineIn: "10,90 €", price: "12,90 €" },
+          { name: "Chèvre Miel", description: "Steak boucher 150 g, fromage de chèvre, red cheddar, miel, moutarde, salade.", dineIn: "10,90 €", price: "12,90 €" },
+          { name: "Braisé", description: "Suprême de poulet braisé, red cheddar, sauce poivre, bacon de bœuf, salade, oignons rouges.", dineIn: "10,90 €", price: "12,90 €" },
+          { name: "L'Emmental", description: "Steak boucher 150 g, double emmental, salade, oignons frits, chorizo de bœuf, mayo / barbecue.", dineIn: "10,90 €", price: "12,90 €" },
+          { name: "Le French", description: "Steak boucher 150 g, jambon, emmental, cheddar, sauce blanche.", dineIn: "10,90 €", price: "12,90 €" },
           { name: "Le Végétarien", description: "Galette pomme de terre aux petits légumes, cheddar, salade, tomates, oignons rouges, sauce mayo.", price: "10,90 €" },
           { name: "L'Oriental", description: "Steak boucher 150 g, double cheddar, poivrons, oignons grillés, œuf, salade, sauce algérienne.", price: "12,90 €" },
           { name: "Le Bleu", description: "Steak boucher 150 g, cheddar, bleu d'Auvergne AOP, salade, oignons rouges.", price: "12,90 €" },
@@ -265,7 +265,7 @@ export const menuCategories = [
           { name: "Rösti pomme de terre", price: "+1,20 €" },
           { name: "Œuf", price: "+0,80 €" },
           { name: "Oignons et poivrons grillés", price: "+1,00 €" },
-          { name: "Sauce cheddar + bacon de bœuf fait maison", price: "+2,50 €" },
+          { name: "Sauce cheddar + bacon de bœuf fait maison", dineIn: "+2,50 €", price: "+2,50 €" },
           { name: "Oignons crispy", price: "+0,80 €" }
         ]
       }
@@ -281,10 +281,10 @@ export const menuCategories = [
       {
         subtitle: "Chicken",
         items: [
-          { name: "Nuggets x8", price: "6,50 €" },
-          { name: "Wings x6", price: "6,50 €" },
-          { name: "Tenders x4", price: "7,50 €" },
-          { name: "Tenders Spicy x4", price: "7,50 €" },
+          { name: "Nuggets x8", dineIn: "6,50 €", price: "6,50 €" },
+          { name: "Wings x6", dineIn: "6,50 €", price: "6,50 €" },
+          { name: "Tenders x4", dineIn: "6,50 €", price: "7,50 €" },
+          { name: "Tenders Spicy x4", dineIn: "6,50 €", price: "7,50 €" },
           { name: "Formule Chicken", description: "Chicken + frites + boisson 33 cl.", price: "9,50 €", featured: true }
         ]
       },
@@ -292,10 +292,10 @@ export const menuCategories = [
         subtitle: "Chicken Buckets",
         note: "Tous les buckets sont servis avec 4 portions de frites + 1 boisson 1,5 L",
         items: [
-          { name: "20 Tenders ou 20 Spicy", price: "29,50 €" },
+          { name: "20 Tenders ou 20 Spicy", dineIn: "26,90 €", price: "29,50 €" },
           { name: "12 Tenders + 12 Wings", price: "29,50 €" },
-          { name: "Bucket au choix", description: "Au choix : 24 wings, 24 nuggets ou 12 tenders.", price: "26,50 €" },
-          { name: "Bucket Mix", description: "12 wings + 12 nuggets ou 12 tenders.", price: "33,50 €" }
+          { name: "Bucket au choix", description: "Au choix : 24 wings, 24 nuggets ou 12 tenders.", dineIn: "23,90 €", price: "26,50 €" },
+          { name: "Bucket Mix", description: "12 wings + 12 nuggets ou 12 tenders.", dineIn: "31,90 €", price: "33,50 €" }
         ]
       }
     ]
@@ -311,10 +311,10 @@ export const menuCategories = [
         subtitle: "Nos salades",
         note: "Toutes les salades sont servies avec 1 boisson 33 cl",
         items: [
-          { name: "Salade Tenders", description: "Salade verte, tomates, tenders, mozzarella.", price: "8,40 €" },
-          { name: "Chèvre Chaud", description: "Salade verte, tomates, chèvre sur toast, mozzarella, olives.", price: "8,40 €" },
-          { name: "Thon", description: "Salade verte, tomates, thon, olives, mozzarella.", price: "8,40 €" },
-          { name: "Saumon", description: "Salade verte, tomates, saumon sur toast, olives, mozzarella.", price: "8,40 €" }
+          { name: "Salade Tenders", description: "Salade verte, tomates, tenders, mozzarella.", dineIn: "7,50 €", price: "8,40 €" },
+          { name: "Chèvre Chaud", description: "Salade verte, tomates, chèvre sur toast, mozzarella, olives.", dineIn: "7,50 €", price: "8,40 €" },
+          { name: "Thon", description: "Salade verte, tomates, thon, olives, mozzarella.", dineIn: "7,50 €", price: "8,40 €" },
+          { name: "Saumon", description: "Salade verte, tomates, saumon sur toast, olives, mozzarella.", dineIn: "7,50 €", price: "8,40 €" }
         ]
       }
     ]
@@ -331,7 +331,7 @@ export const menuCategories = [
         layout: "grid",
         items: [
           { name: "Seul", price: "4,50 €" },
-          { name: "Menu (frites + boisson 33 cl)", price: "7,50 €" }
+          { name: "Menu (frites + boisson 33 cl)", dineIn: "6,00 €", price: "7,50 €" }
         ]
       },
       {
@@ -340,14 +340,14 @@ export const menuCategories = [
         layout: "grid",
         items: [
           { name: "Seul", price: "5,50 €" },
-          { name: "Menu (frites + boisson 33 cl)", price: "7,50 €" }
+          { name: "Menu (frites + boisson 33 cl)", dineIn: "6,50 €", price: "7,50 €" }
         ]
       },
       {
         subtitle: "À la carte",
         items: [
-          { name: "Hummer - Menu", description: "4 pains de mie toastés, 3 steaks, 3 cheddars, mayo / ketchup, salade, tomate.", price: "9,90 €" },
-          { name: "Bouchées – 6 pièces", description: "Au choix : jalapeños, sticks mozzarella, bouchées de camembert ou beignets de calamars.", price: "6,50 €" },
+          { name: "Hummer - Menu", description: "4 pains de mie toastés, 3 steaks, 3 cheddars, mayo / ketchup, salade, tomate.", dineIn: "8,50 €", price: "9,90 €" },
+          { name: "Bouchées – 6 pièces", description: "Au choix : jalapeños, sticks mozzarella, bouchées de camembert ou beignets de calamars.", dineIn: "6,90 €", price: "6,50 €" },
           { name: "Frites paysannes", description: "Barquette de frites paysannes.", price: "3,50 €" }
         ]
       }
@@ -364,10 +364,10 @@ export const menuCategories = [
         subtitle: "Desserts",
         layout: "grid",
         items: [
-          { name: "Tiramisu", price: "3,50 €" },
+          { name: "Tiramisu", dineIn: "2,50 €", price: "3,50 €" },
           { name: "Panini Nutella", price: "3,50 €" },
-          { name: "Tarte aux Daims", price: "3,50 €" },
-          { name: "Brownie", price: "2,50 €" },
+          { name: "Tarte aux Daims", dineIn: "2,50 €", price: "3,50 €" },
+          { name: "Brownie", dineIn: "2,50 €", price: "2,50 €" },
           { name: "Cheesecake", price: "3,50 €" },
           { name: "Muffins", price: "2,50 €" },
           { name: "Cookies", price: "2,50 €" },
@@ -379,17 +379,17 @@ export const menuCategories = [
         subtitle: "Glaces Häagen-Dazs",
         layout: "grid",
         items: [
-          { name: "Pot 100 ml", price: "3,50 €" },
-          { name: "Pot 500 ml", price: "7,50 €" }
+          { name: "Pot 100 ml", dineIn: "3,00 €", price: "3,50 €" },
+          { name: "Pot 500 ml", dineIn: "7,50 €", price: "7,50 €" }
         ]
       },
       {
         subtitle: "Boissons",
         layout: "grid",
         items: [
-          { name: "Boisson 33 cl", price: "1,50 €" },
+          { name: "Boisson 33 cl", dineIn: "1,50 €", price: "1,50 €" },
           { name: "Red Bull", price: "3,50 €" },
-          { name: "Boisson 1,5 L", price: "3,50 €" }
+          { name: "Boisson 1,5 L", dineIn: "3,00 €", price: "3,50 €" }
         ]
       }
     ]
