@@ -193,7 +193,7 @@ export const menuCategories = [
           { name: "Whooper Triple", description: "3 steaks, 3 cheddars, mayonnaise, ketchup, salade, tomates, oignons rouges, pickles.", dineIn: "8,50 €", price: "9,90 €" },
           { name: "Le 90", description: "Steak 90 g, cheddar, chorizo de bœuf, salade, tomates, oignons rouges, sauce algérienne / barbecue.", dineIn: "7,50 €", price: "9,50 €" },
           { name: "Le 180", description: "2 steaks 90 g, 2 cheddars, tomates, oignons rouges, sauce algérienne / barbecue.", dineIn: "8,50 €", price: "9,90 €" },
-          { name: "American", description: "3 steaks 90 g, cheddar, galette pomme de terre, mayonnaise, barbecue, salade.", dineIn: "8,50 €", price: "9,90 €" },
+          { name: "American", description: "1 steak 90 g, cheddar, galette pomme de terre, mayonnaise, barbecue, salade.", dineIn: "8,50 €", price: "9,90 €" },
           { name: "Crispy Burger", description: "Tenders, cheddar, salade, tomates, oignons rouges, mayonnaise, barbecue.", price: "8,50 €" },
           { name: "Chicken Burger", description: "Galette chicken, cheddar, salade, oignons rouges, mayonnaise.", dineIn: "7,00 €", price: "8,50 €" },
           { name: "Tower", description: "Galette chicken, galette pomme de terre, double cheddar, salade, oignons rouges, mayonnaise.", dineIn: "8,50 €", price: "9,90 €" },
