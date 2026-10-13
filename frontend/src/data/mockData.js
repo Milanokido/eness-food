@@ -186,7 +186,7 @@ export const menuCategories = [
           { name: "Cheese", description: "Steak, fromage, ketchup, moutarde, oignons, pickles.", dineIn: "6,00 €", price: "7,50 €" },
           { name: "Double Cheese", description: "2 steaks, 2 fromages, ketchup, moutarde, oignons, pickles.", dineIn: "7,00 €", price: "8,50 €" },
           { name: "Triple Cheese", description: "3 steaks, 3 fromages, ketchup, moutarde, oignons, pickles.", dineIn: "8,00 €", price: "9,50 €" },
-          { name: "Le Big", description: "3 steaks 90 g, jambon, 2 cheddars, œuf, salade, oignons, sauce samouraï, ketchup.", dineIn: "9,00 €", price: "9,90 €" },
+          { name: "Le Big", description: "2 steaks 90 g, jambon, 2 cheddars, œuf, salade, oignons, sauce samouraï, ketchup.", dineIn: "9,00 €", price: "9,90 €" },
           { name: "Le Max", description: "Steak 90 g, galette chicken, cheddar, emmental, salade, oignons, sauce poivre, barbecue.", price: "9,90 €" },
           { name: "Whooper Simple", description: "Steak, cheddar, mayonnaise, ketchup, salade, tomates, oignons rouges, pickles.", dineIn: "6,50 €", price: "7,90 €" },
           { name: "Whooper Double", description: "2 steaks, 2 cheddars, mayonnaise, ketchup, salade, tomates, oignons rouges, pickles.", dineIn: "7,50 €", price: "8,90 €" },
